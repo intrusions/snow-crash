@@ -45,12 +45,11 @@ First, let's identify the type of the script:
 ```bash
 $ file /usr/sbin/openarenaserver
 /usr/sbin/openarenaserver: POSIX shell script, ASCII text executable
-
-$ cat /usr/sbin/openarenaserver
 ```
-```c
-#!/bin/sh
+```bash
+$ cat /usr/sbin/openarenaserver
 
+#!/bin/sh
 for i in /opt/openarenaserver/* ; do
         (ulimit -t 5; bash -x "$i")
         rm -f "$i"
@@ -66,7 +65,7 @@ After executing, the script deletes the file.
 To exploit this, we can create a file in /opt/openarenaserver/ that contains a command we want to execute with flag05 privileges. In this case, we want to obtain the flag, so we can create a file with the following content:
 
 ```bash
-echo 'getflag > /tmp/output_getflag' > /opt/openarenaserver/exploit
+echo 'getflag > /tmp/output_getflag'
 ```
 When the cron job runs the script, it will execute our file and redirect the output of getflag to /tmp/output_getflag.
 
