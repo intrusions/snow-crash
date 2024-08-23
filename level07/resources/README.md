@@ -27,7 +27,7 @@ The level06 binary is a setuid ELF executable, meaning it executes with the flag
 
 Let's transfer it to our local machine for reverse engineering:
 ```bash
-$ scp -P 4242 level03@machine_ip:/home/level07/level07 .
+$ scp -P 4242 level07@machine_ip:/home/level07/level07 .
 ```
 ---
 ## Step 3: Reverse Engineering the Binary with Ghidra
