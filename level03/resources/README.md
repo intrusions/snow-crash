@@ -68,8 +68,6 @@ Now, run the vulnerable binary:
 
 ```bash
 $ ./level03
-% id
-uid=3003(flag03) gid=2003(level03) groups=3003(flag03),100(users),2003(level03)
 
 % getflag
 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus

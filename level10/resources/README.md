@@ -155,7 +155,7 @@ There are three possible outcomes:
 
     1. Access to token file fails: The output will be: You don't have access to /tmp/exploit.
     2. Symlink points to test file: The listener will print the contents of /tmp/test.
-    3. Symlink points to token file: The listener will print the contents of ~/token, which contains the secret token.
+    3. Symlink points to test file when the file is accessed, and when the file is opened, it points to the token file: The listener will print the contents of ~/token, which contains the secret token.
 
 
 ### Listener Output

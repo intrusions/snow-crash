@@ -33,7 +33,7 @@ $ scp -P 4242 level02@machine_ip:/home/level02/level02.pcap .
 
 ## Step 3: Analyzing the TCP Dump with Wireshark
 
-Upon analyzing the packet capture file in Wireshark, we notice a packet where a password is requested. Following this packet, we see our machine responding with a series of packets, each containing a character.
+Upon analyzing the packet capture file in Wireshark, we notice a packet where a password is requested. Following this packet, we see our machine responding with a series of packets, each containing one character.
 
 When we concatenate these characters, we get the following string:
 

@@ -65,7 +65,7 @@ After executing, the script deletes the file.
 To exploit this, we can create a file in /opt/openarenaserver/ that contains a command we want to execute with flag05 privileges. In this case, we want to obtain the flag, so we can create a file with the following content:
 
 ```bash
-echo 'getflag > /tmp/output_getflag'
+echo 'getflag > /tmp/output_getflag' > /opt/openarenaserver/exploit
 ```
 When the cron job runs the script, it will execute our file and redirect the output of getflag to /tmp/output_getflag.
 

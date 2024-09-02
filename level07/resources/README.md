@@ -23,7 +23,7 @@ level07: setuid setgid ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV),
 $ ./level07
 level07
 ```
-The level06 binary is a setuid ELF executable, meaning it executes with the flag07 user's permissions.
+The level07 binary is a setuid ELF executable, meaning it executes with the flag07 user's permissions.
 
 Let's transfer it to our local machine for reverse engineering:
 ```bash

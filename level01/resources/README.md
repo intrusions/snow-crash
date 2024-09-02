@@ -13,11 +13,10 @@ This shows that we are operating as the user `level01`.
 
 ## Step 2: Searching for files
 
-Next, we attempt to find any files owned by the user `level01` or `flag01` :
+Next, we attempt to find any files owned by the user or `flag01` :
 
 ```bash
-$ find / -user level01 -group level01 2> /dev/null
-$ find / -user flag01 -group flag01 2> /dev/null
+$ find / -user flag01 2> /dev/null
 ```
 
 Unfortunately, this search did not yield any useful results.
@@ -65,9 +64,9 @@ Password:
 abcdefg
 
 $ getflag
-Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
+Check flag.Here is your token : f2av5il02puano7naaf6adaaf
 ```
 
 ---
 
-And there you have it, the token is `x24ti5gi3x0ol2eh4esiuxias`.
+And there you have it, the token is `f2av5il02puano7naaf6adaaf`.
